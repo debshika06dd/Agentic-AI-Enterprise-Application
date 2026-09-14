@@ -1,0 +1,7 @@
+Information Security Policy
+
+All employees must complete mandatory security training.
+
+Employees must protect company credentials and must never share passwords with other people.
+
+Sensitive company information should only be accessed by authorized employees.
