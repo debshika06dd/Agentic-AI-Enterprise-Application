@@ -162,9 +162,19 @@ async def main():
 
     print("\nFinal Answer:\n")
 
-    print(
-        result["messages"][-1].content
-    )
+    final_content = result["messages"][-1].content
+
+    if isinstance(final_content, list):
+
+        for block in final_content:
+
+            if isinstance(block, dict) and block.get("type") == "text":
+
+                print(block.get("text"))
+
+    else:
+
+        print(final_content)
 
 
 if __name__ == "__main__":
